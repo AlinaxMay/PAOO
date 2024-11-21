@@ -1,4 +1,4 @@
-#include "Student.h"
+#include "student.h"
 
 // Constructor
 Student::Student(const std::string& name, int id, int year)

@@ -1,4 +1,4 @@
-# Create a library for the Student component
+# Create a library for the student component
 add_library(student_lib student.cpp)
 
 # Include directory for the Student library

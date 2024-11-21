@@ -1,4 +1,4 @@
-#include "Camin.h"
+#include "camin.h"
 
 // Constructor
 Camin::Camin(const std::string& name) : name(name) {}

@@ -1,0 +1,3 @@
+/home/alina/Desktop/PAOO/src/Student/build/CMakeFiles/student_lib.dir
+/home/alina/Desktop/PAOO/src/Student/build/CMakeFiles/edit_cache.dir
+/home/alina/Desktop/PAOO/src/Student/build/CMakeFiles/rebuild_cache.dir

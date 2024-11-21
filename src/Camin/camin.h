@@ -1,7 +1,7 @@
 #ifndef CAMIN_H
 #define CAMIN_H
 
-#include "Camera.h"
+#include "camera.h"
 #include <vector>
 
 class Camin {

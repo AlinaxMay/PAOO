@@ -1,4 +1,6 @@
-#include "Camera.h"
+#include "camera.h"
+#include "../Student/student.h"
+#include <memory>  // Include for smart pointers
 
 // Constructor
 Camera::Camera(int roomNumber, int capacity)
@@ -7,8 +9,8 @@ Camera::Camera(int roomNumber, int capacity)
 // Copy Constructor
 Camera::Camera(const Camera& other)
     : roomNumber(other.roomNumber), capacity(other.capacity) {
-    for (Student* student : other.students) {
-        students.push_back(new Student(*student));
+    for (const auto& student : other.students) {
+        students.push_back(std::make_unique<Student>(*student));
     }
 }
 
@@ -18,15 +20,12 @@ Camera& Camera::operator=(const Camera& other) {
         roomNumber = other.roomNumber;
         capacity = other.capacity;
 
-        // Free existing memory
-        for (Student* student : students) {
-            delete student;
-        }
+        // No need to manually delete memory, unique_ptr handles this automatically
         students.clear();
 
         // Deep copy
-        for (Student* student : other.students) {
-            students.push_back(new Student(*student));
+        for (const auto& student : other.students) {
+            students.push_back(std::make_unique<Student>(*student));
         }
     }
     return *this;
@@ -34,15 +33,13 @@ Camera& Camera::operator=(const Camera& other) {
 
 // Destructor
 Camera::~Camera() {
-    for (Student* student : students) {
-        delete student;
-    }
+    // No need to manually delete memory, unique_ptr handles this automatically
 }
 
 // Methods
-bool Camera::adaugaStudent(Student* student) {
+bool Camera::adaugaStudent(std::unique_ptr<Student> student) {
     if (students.size() < static_cast<size_t>(capacity)) {
-        students.push_back(student);
+        students.push_back(std::move(student)); // Move the student into the vector
         return true;
     }
     return false;

@@ -1,14 +1,15 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include "src/Student/student.h"
+#include "../Student/student.h"
 #include <vector>
+#include <memory> // Include for smart pointers
 
 class Camera {
 private:
     int roomNumber;
     int capacity;
-    std::vector<Student*> students;
+    std::vector<std::unique_ptr<Student>> students; // Use unique_ptr for memory management
 
 public:
     // Constructor
@@ -24,7 +25,7 @@ public:
     ~Camera();
 
     // Methods
-    bool adaugaStudent(Student* student);
+    bool adaugaStudent(std::unique_ptr<Student> student); // Accept unique_ptr to ensure ownership
 };
 
 #endif // CAMERA_H
