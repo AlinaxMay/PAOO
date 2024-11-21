@@ -1,0 +1,12 @@
+/home/alina/Desktop/PAOO/src/build/CMakeFiles/PAOO.dir
+/home/alina/Desktop/PAOO/src/build/CMakeFiles/edit_cache.dir
+/home/alina/Desktop/PAOO/src/build/CMakeFiles/rebuild_cache.dir
+/home/alina/Desktop/PAOO/src/build/Student/CMakeFiles/student_lib.dir
+/home/alina/Desktop/PAOO/src/build/Student/CMakeFiles/edit_cache.dir
+/home/alina/Desktop/PAOO/src/build/Student/CMakeFiles/rebuild_cache.dir
+/home/alina/Desktop/PAOO/src/build/Camera/CMakeFiles/camera_lib.dir
+/home/alina/Desktop/PAOO/src/build/Camera/CMakeFiles/edit_cache.dir
+/home/alina/Desktop/PAOO/src/build/Camera/CMakeFiles/rebuild_cache.dir
+/home/alina/Desktop/PAOO/src/build/Camin/CMakeFiles/camin_lib.dir
+/home/alina/Desktop/PAOO/src/build/Camin/CMakeFiles/edit_cache.dir
+/home/alina/Desktop/PAOO/src/build/Camin/CMakeFiles/rebuild_cache.dir
