@@ -1,6 +1,7 @@
 #include "student.h"
+#include <iostream>
 
-// Constructor
+//  inițializarea membrilor din constructor
 Student::Student(const std::string& name, int id, int year)
     : name(name), id(id), year(year) {}
 
@@ -19,7 +20,9 @@ Student& Student::operator=(const Student& other) {
 }
 
 // Destructor
-Student::~Student() {}
+Student::~Student() {
+    std::cout << "Apelat destructor student: " << name << "\n";
+}
 
 // Getters
 std::string Student::getName() const { return name; }

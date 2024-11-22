@@ -1,8 +1,9 @@
 #include "camera.h"
 #include "../Student/student.h"
+#include <iostream>
 #include <memory>  // Include for smart pointers
 
-// Constructor
+ //inițializarea membrilor din constructor
 Camera::Camera(int roomNumber, int capacity)
     : roomNumber(roomNumber), capacity(capacity) {}
 
@@ -13,6 +14,11 @@ Camera::Camera(const Camera& other)
         students.push_back(std::make_unique<Student>(*student));
     }
 }
+
+int Camera::getRoomNumber() const {
+    return roomNumber;
+}
+
 
 // Assignment Operator
 Camera& Camera::operator=(const Camera& other) {
@@ -33,8 +39,9 @@ Camera& Camera::operator=(const Camera& other) {
 
 // Destructor
 Camera::~Camera() {
-    // No need to manually delete memory, unique_ptr handles this automatically
+    std::cout<<"Apelat destructor camera:" << roomNumber << "\n";
 }
+
 
 // Methods
 bool Camera::adaugaStudent(std::unique_ptr<Student> student) {

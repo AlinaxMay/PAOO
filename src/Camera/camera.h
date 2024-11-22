@@ -9,8 +9,7 @@ class Camera {
 private:
     int roomNumber;
     int capacity;
-    std::vector<std::unique_ptr<Student>> students; // Use unique_ptr for memory management
-
+    std::vector<std::unique_ptr<Student>> students; 
 public:
     // Constructor
     Camera(int roomNumber, int capacity);
@@ -26,6 +25,9 @@ public:
 
     // Methods
     bool adaugaStudent(std::unique_ptr<Student> student); // Accept unique_ptr to ensure ownership
+    // Getter pentru roomNumber
+    int getRoomNumber() const;
+
 };
 
 #endif // CAMERA_H

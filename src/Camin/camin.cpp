@@ -7,8 +7,8 @@ Camin::Camin(const std::string& name) : name(name) {}
 Camin::~Camin() {}
 
 // Methods
-void Camin::adaugaCamera(const Camera& camera) {
-    camere.push_back(camera);
+void Camin::adaugaCamera(Camera&& camera) {
+    camere.push_back(std::move(camera)); 
 }
 
 Camera* Camin::getCamera(int roomNumber) {

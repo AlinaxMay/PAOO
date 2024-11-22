@@ -1,10 +1,11 @@
 #ifndef CAMIN_H
 #define CAMIN_H
 
-#include "camera.h"
+#include "../Camera/camera.h"
 #include <vector>
 
 class Camin {
+    //incapsulare
 private:
     std::string name;
     std::vector<Camera> camere;
@@ -17,7 +18,9 @@ public:
     ~Camin();
 
     // Methods
-    void adaugaCamera(const Camera& camera);
+    void adaugaCamera(Camera&& camera);
+
+
     Camera* getCamera(int roomNumber);
 };
 
