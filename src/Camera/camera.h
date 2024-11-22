@@ -3,7 +3,7 @@
 
 #include "../Student/student.h"
 #include <vector>
-#include <memory> // Include for smart pointers
+#include <memory> 
 
 class Camera {
 private:
@@ -17,6 +17,9 @@ public:
     // Copy Constructor
     Camera(const Camera& other);
 
+    // Move Constructor
+    Camera(Camera&& other) noexcept;
+
     // Assignment Operator
     Camera& operator=(const Camera& other);
 
@@ -24,7 +27,7 @@ public:
     ~Camera();
 
     // Methods
-    bool adaugaStudent(std::unique_ptr<Student> student); // Accept unique_ptr to ensure ownership
+    bool adaugaStudent(std::unique_ptr<Student> student);
     // Getter pentru roomNumber
     int getRoomNumber() const;
 

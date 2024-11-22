@@ -19,6 +19,11 @@ int Camera::getRoomNumber() const {
     return roomNumber;
 }
 
+// Camera (move constructor)
+Camera::Camera(Camera&& other) noexcept 
+    : roomNumber(other.roomNumber), capacity(other.capacity), students(std::move(other.students)) {
+    std::cout << "Move constructor for Camera\n";
+}
 
 // Assignment Operator
 Camera& Camera::operator=(const Camera& other) {
@@ -26,7 +31,6 @@ Camera& Camera::operator=(const Camera& other) {
         roomNumber = other.roomNumber;
         capacity = other.capacity;
 
-        // No need to manually delete memory, unique_ptr handles this automatically
         students.clear();
 
         // Deep copy
@@ -46,7 +50,7 @@ Camera::~Camera() {
 // Methods
 bool Camera::adaugaStudent(std::unique_ptr<Student> student) {
     if (students.size() < static_cast<size_t>(capacity)) {
-        students.push_back(std::move(student)); // Move the student into the vector
+        students.push_back(std::move(student)); 
         return true;
     }
     return false;

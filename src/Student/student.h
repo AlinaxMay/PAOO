@@ -4,6 +4,7 @@
 #include <string>
 
 class Student {
+    //incapsulare
 private:
     std::string name;
     int id;
@@ -15,6 +16,9 @@ public:
 
     // Copy Constructor
     Student(const Student& other);
+
+    // Move Constructor
+    Student(Student&& other) noexcept;
 
     // Assignment Operator
     Student& operator=(const Student& other);

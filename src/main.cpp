@@ -20,16 +20,26 @@ int main() {
     auto student1 = std::make_unique<Student>("Alina", 1000, 2);
     auto student2 = std::make_unique<Student>("Maria", 1001, 1);
 
-    if (camera1.adaugaStudent(std::move(student1))) {
-        std::cout << "Studentul a fost adaugat in camera.\n";
-    } else {
-        std::cout << "Camera este plina.\n";
+    // if (camera1.adaugaStudent(std::move(student1))) {
+    //     std::cout << "Studentul a fost adaugat in camera.\n";
+    // } else {
+    //     std::cout << "Camera este plina.\n";
+    // }
+
+    // if (camera1.adaugaStudent(std::move(student2))) {
+    //     std::cout << "Studentul a fost adaugat in camera.\n";
+    // } else {
+    //     std::cout << "Camera este plina.\n";
+    // }
+
+    Camera* cam = camin.getCamera(1); 
+    if (cam && cam->adaugaStudent(std::move(student1))) {
+        std::cout << "Alina a fost adaugat in camera 1.\n";
     }
 
-    // Camera* cam = camin.getCamera(1); 
-    // if (cam && cam->adaugaStudent(std::move(student1))) {
-    //     std::cout << "Alina a fost adaugat in camera 1.\n";
-    // }
+    if (cam && cam->adaugaStudent(std::move(student2))) {
+        std::cout << "Maria a fost adaugat in camera 1.\n";
+    }
 
     return 0;
 }

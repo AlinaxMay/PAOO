@@ -11,6 +11,8 @@ void Camin::adaugaCamera(Camera&& camera) {
     camere.push_back(std::move(camera)); 
 }
 
+
+
 Camera* Camin::getCamera(int roomNumber) {
     for (Camera& camera : camere) {
         if (camera.getRoomNumber() == roomNumber) {
