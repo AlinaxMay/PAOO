@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/alina/Desktop/PAOO/src/Camin -I/home/alina/Desktop/PAOO/src/Camera -I/home/alina/Desktop/PAOO/src/Student
 
-CXX_FLAGS = -std=c++14
+CXX_FLAGS = -std=gnu++17
 

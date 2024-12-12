@@ -129,44 +129,77 @@ PAOO/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/build
 .PHONY : PAOO/fast
 
-#=============================================================================
-# Target rules for targets named student_lib
+Camera/camera.o: Camera/camera.cpp.o
+.PHONY : Camera/camera.o
 
-# Build rule for target.
-student_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 student_lib
-.PHONY : student_lib
+# target to build an object file
+Camera/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Camera/camera.cpp.o
+.PHONY : Camera/camera.cpp.o
 
-# fast build rule for target.
-student_lib/fast:
-	$(MAKE) $(MAKESILENT) -f Student/CMakeFiles/student_lib.dir/build.make Student/CMakeFiles/student_lib.dir/build
-.PHONY : student_lib/fast
+Camera/camera.i: Camera/camera.cpp.i
+.PHONY : Camera/camera.i
 
-#=============================================================================
-# Target rules for targets named camera_lib
+# target to preprocess a source file
+Camera/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Camera/camera.cpp.i
+.PHONY : Camera/camera.cpp.i
 
-# Build rule for target.
-camera_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 camera_lib
-.PHONY : camera_lib
+Camera/camera.s: Camera/camera.cpp.s
+.PHONY : Camera/camera.s
 
-# fast build rule for target.
-camera_lib/fast:
-	$(MAKE) $(MAKESILENT) -f Camera/CMakeFiles/camera_lib.dir/build.make Camera/CMakeFiles/camera_lib.dir/build
-.PHONY : camera_lib/fast
+# target to generate assembly for a file
+Camera/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Camera/camera.cpp.s
+.PHONY : Camera/camera.cpp.s
 
-#=============================================================================
-# Target rules for targets named camin_lib
+Camin/camin.o: Camin/camin.cpp.o
+.PHONY : Camin/camin.o
 
-# Build rule for target.
-camin_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 camin_lib
-.PHONY : camin_lib
+# target to build an object file
+Camin/camin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Camin/camin.cpp.o
+.PHONY : Camin/camin.cpp.o
 
-# fast build rule for target.
-camin_lib/fast:
-	$(MAKE) $(MAKESILENT) -f Camin/CMakeFiles/camin_lib.dir/build.make Camin/CMakeFiles/camin_lib.dir/build
-.PHONY : camin_lib/fast
+Camin/camin.i: Camin/camin.cpp.i
+.PHONY : Camin/camin.i
+
+# target to preprocess a source file
+Camin/camin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Camin/camin.cpp.i
+.PHONY : Camin/camin.cpp.i
+
+Camin/camin.s: Camin/camin.cpp.s
+.PHONY : Camin/camin.s
+
+# target to generate assembly for a file
+Camin/camin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Camin/camin.cpp.s
+.PHONY : Camin/camin.cpp.s
+
+Student/student.o: Student/student.cpp.o
+.PHONY : Student/student.o
+
+# target to build an object file
+Student/student.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Student/student.cpp.o
+.PHONY : Student/student.cpp.o
+
+Student/student.i: Student/student.cpp.i
+.PHONY : Student/student.i
+
+# target to preprocess a source file
+Student/student.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Student/student.cpp.i
+.PHONY : Student/student.cpp.i
+
+Student/student.s: Student/student.cpp.s
+.PHONY : Student/student.s
+
+# target to generate assembly for a file
+Student/student.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PAOO.dir/build.make CMakeFiles/PAOO.dir/Student/student.cpp.s
+.PHONY : Student/student.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -201,9 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PAOO"
-	@echo "... camera_lib"
-	@echo "... camin_lib"
-	@echo "... student_lib"
+	@echo "... Camera/camera.o"
+	@echo "... Camera/camera.i"
+	@echo "... Camera/camera.s"
+	@echo "... Camin/camin.o"
+	@echo "... Camin/camin.i"
+	@echo "... Camin/camin.s"
+	@echo "... Student/student.o"
+	@echo "... Student/student.i"
+	@echo "... Student/student.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

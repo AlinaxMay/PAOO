@@ -83,17 +83,65 @@ CMakeFiles/PAOO.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PAOO.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Desktop/PAOO/src/main.cpp -o CMakeFiles/PAOO.dir/main.cpp.s
 
+CMakeFiles/PAOO.dir/Camin/camin.cpp.o: CMakeFiles/PAOO.dir/flags.make
+CMakeFiles/PAOO.dir/Camin/camin.cpp.o: ../Camin/camin.cpp
+CMakeFiles/PAOO.dir/Camin/camin.cpp.o: CMakeFiles/PAOO.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/Desktop/PAOO/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PAOO.dir/Camin/camin.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/Camin/camin.cpp.o -MF CMakeFiles/PAOO.dir/Camin/camin.cpp.o.d -o CMakeFiles/PAOO.dir/Camin/camin.cpp.o -c /home/alina/Desktop/PAOO/src/Camin/camin.cpp
+
+CMakeFiles/PAOO.dir/Camin/camin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PAOO.dir/Camin/camin.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alina/Desktop/PAOO/src/Camin/camin.cpp > CMakeFiles/PAOO.dir/Camin/camin.cpp.i
+
+CMakeFiles/PAOO.dir/Camin/camin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PAOO.dir/Camin/camin.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Desktop/PAOO/src/Camin/camin.cpp -o CMakeFiles/PAOO.dir/Camin/camin.cpp.s
+
+CMakeFiles/PAOO.dir/Camera/camera.cpp.o: CMakeFiles/PAOO.dir/flags.make
+CMakeFiles/PAOO.dir/Camera/camera.cpp.o: ../Camera/camera.cpp
+CMakeFiles/PAOO.dir/Camera/camera.cpp.o: CMakeFiles/PAOO.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/Desktop/PAOO/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PAOO.dir/Camera/camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/Camera/camera.cpp.o -MF CMakeFiles/PAOO.dir/Camera/camera.cpp.o.d -o CMakeFiles/PAOO.dir/Camera/camera.cpp.o -c /home/alina/Desktop/PAOO/src/Camera/camera.cpp
+
+CMakeFiles/PAOO.dir/Camera/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PAOO.dir/Camera/camera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alina/Desktop/PAOO/src/Camera/camera.cpp > CMakeFiles/PAOO.dir/Camera/camera.cpp.i
+
+CMakeFiles/PAOO.dir/Camera/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PAOO.dir/Camera/camera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Desktop/PAOO/src/Camera/camera.cpp -o CMakeFiles/PAOO.dir/Camera/camera.cpp.s
+
+CMakeFiles/PAOO.dir/Student/student.cpp.o: CMakeFiles/PAOO.dir/flags.make
+CMakeFiles/PAOO.dir/Student/student.cpp.o: ../Student/student.cpp
+CMakeFiles/PAOO.dir/Student/student.cpp.o: CMakeFiles/PAOO.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/Desktop/PAOO/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PAOO.dir/Student/student.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PAOO.dir/Student/student.cpp.o -MF CMakeFiles/PAOO.dir/Student/student.cpp.o.d -o CMakeFiles/PAOO.dir/Student/student.cpp.o -c /home/alina/Desktop/PAOO/src/Student/student.cpp
+
+CMakeFiles/PAOO.dir/Student/student.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PAOO.dir/Student/student.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alina/Desktop/PAOO/src/Student/student.cpp > CMakeFiles/PAOO.dir/Student/student.cpp.i
+
+CMakeFiles/PAOO.dir/Student/student.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PAOO.dir/Student/student.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Desktop/PAOO/src/Student/student.cpp -o CMakeFiles/PAOO.dir/Student/student.cpp.s
+
 # Object files for target PAOO
 PAOO_OBJECTS = \
-"CMakeFiles/PAOO.dir/main.cpp.o"
+"CMakeFiles/PAOO.dir/main.cpp.o" \
+"CMakeFiles/PAOO.dir/Camin/camin.cpp.o" \
+"CMakeFiles/PAOO.dir/Camera/camera.cpp.o" \
+"CMakeFiles/PAOO.dir/Student/student.cpp.o"
 
 # External object files for target PAOO
 PAOO_EXTERNAL_OBJECTS =
 
 PAOO: CMakeFiles/PAOO.dir/main.cpp.o
+PAOO: CMakeFiles/PAOO.dir/Camin/camin.cpp.o
+PAOO: CMakeFiles/PAOO.dir/Camera/camera.cpp.o
+PAOO: CMakeFiles/PAOO.dir/Student/student.cpp.o
 PAOO: CMakeFiles/PAOO.dir/build.make
 PAOO: CMakeFiles/PAOO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alina/Desktop/PAOO/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable PAOO"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alina/Desktop/PAOO/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable PAOO"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PAOO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

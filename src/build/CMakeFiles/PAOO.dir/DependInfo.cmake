@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/alina/Desktop/PAOO/src/Camera/camera.cpp" "CMakeFiles/PAOO.dir/Camera/camera.cpp.o" "gcc" "CMakeFiles/PAOO.dir/Camera/camera.cpp.o.d"
+  "/home/alina/Desktop/PAOO/src/Camin/camin.cpp" "CMakeFiles/PAOO.dir/Camin/camin.cpp.o" "gcc" "CMakeFiles/PAOO.dir/Camin/camin.cpp.o.d"
+  "/home/alina/Desktop/PAOO/src/Student/student.cpp" "CMakeFiles/PAOO.dir/Student/student.cpp.o" "gcc" "CMakeFiles/PAOO.dir/Student/student.cpp.o.d"
   "/home/alina/Desktop/PAOO/src/main.cpp" "CMakeFiles/PAOO.dir/main.cpp.o" "gcc" "CMakeFiles/PAOO.dir/main.cpp.o.d"
   )
 
