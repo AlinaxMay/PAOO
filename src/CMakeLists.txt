@@ -1,27 +1,26 @@
-# CMake version
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.10)
 
-# Project name
-project(PAOO)
+# Project Name and Version
+project(PAOO VERSION 1.0)
 
-# Specify the required C++ standard
-if(CMAKE_VERSION GREATER "3.1.2")
-    set(CMAKE_CXX_STANDARD 14)
-    set(CMAKE_CXX_STANDARD_REQUIRED ON)
-    set(CMAKE_CXX_EXTENSIONS OFF)
-else()
-    if(CMAKE_COMPILER_IS_GNUCXX)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
-    endif()
-endif()
+# Set C++ Standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Add subdirectories for each component
-add_subdirectory(Student)
-add_subdirectory(Camera)
-add_subdirectory(Camin)
+# Add source files
+set(SOURCES
+    main.cpp
+    Camin/camin.cpp
+    Camera/camera.cpp
+    Student/student.cpp
+)
 
-# Define the executable and link libraries from subdirectories
-add_executable(${PROJECT_NAME} main.cpp)
+# Create the executable
+add_executable(PAOO ${SOURCES})
 
-# Link the libraries defined in each subdirectory
-target_link_libraries(${PROJECT_NAME} Student Camera Camin)
+# Include directories
+target_include_directories(PAOO PRIVATE
+    ${CMAKE_SOURCE_DIR}/Camin
+    ${CMAKE_SOURCE_DIR}/Camera
+    ${CMAKE_SOURCE_DIR}/Student
+)

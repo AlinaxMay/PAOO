@@ -19,6 +19,7 @@ public:
 
     // Methods
     void adaugaCamera(Camera&& camera);
+    void adaugaCamera(std::unique_ptr<Camera> camera);
 
 
     Camera* getCamera(int roomNumber);

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/PAOO.dir/main.cpp.o CMakeFiles/PAOO.dir/Camin/camin.cpp.o CMakeFiles/PAOO.dir/Camera/camera.cpp.o CMakeFiles/PAOO.dir/Student/student.cpp.o -o PAOO 

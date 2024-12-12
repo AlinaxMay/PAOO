@@ -5,7 +5,9 @@
 
  //inițializarea membrilor din constructor
 Camera::Camera(int roomNumber, int capacity)
-    : roomNumber(roomNumber), capacity(capacity) {}
+    : roomNumber(roomNumber), capacity(capacity) {
+        std::cout << "Camera " << roomNumber << " a fost creata.\n";
+    }
 
 // Copy Constructor
 Camera::Camera(const Camera& other)
@@ -45,6 +47,11 @@ Camera& Camera::operator=(const Camera& other) {
 Camera::~Camera() {
     std::cout<<"Apelat destructor camera:" << roomNumber << "\n";
 }
+
+void Camera :: afiseaza() const {
+        std::cout << "Camera " << roomNumber << ", capacitate: " << capacity << "\n";
+    }
+
 
 
 // Methods

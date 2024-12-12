@@ -1,7 +1,9 @@
 #include "camin.h"
 
 // Constructor
-Camin::Camin(const std::string& name) : name(name) {}
+Camin::Camin(const std::string& name) : name(name) {
+     std::cout << "Obiectul " << name << " a fost creat." << std::endl;
+}
 
 // Destructor
 Camin::~Camin() {}
@@ -9,6 +11,10 @@ Camin::~Camin() {}
 // Methods
 void Camin::adaugaCamera(Camera&& camera) {
     camere.push_back(std::move(camera)); 
+}
+
+void adaugaCamera(std::unique_ptr<Camera> camera) {
+    camera->afiseaza();
 }
 
 

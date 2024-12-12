@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcamin_lib.a CMakeFiles/camin_lib.dir/camin.cpp.o
+/usr/bin/ranlib libcamin_lib.a

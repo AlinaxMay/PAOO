@@ -1,5 +1,6 @@
 #include "Student/student.h"
 #include "Camera/camera.h"
+#include "Camera/CameraLux.h"
 #include "Camin/camin.h"
 #include <iostream>
 #include <memory> // Include for unique_ptr
@@ -11,10 +12,11 @@ int main() {
 
     Camera camera1(1, 2);
     Camera camera2(2, 3);
-
+    Camera cameraLux = CameraDeLux(201, 3, true, "Modern");
  
     camin.adaugaCamera(std::move(camera1));
     camin.adaugaCamera(std::move(camera2));
+    camin.adaugaCamera(std::move(cameraLux));
 
 
     auto student1 = std::make_unique<Student>("Alina", 1000, 2);

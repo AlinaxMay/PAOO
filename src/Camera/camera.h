@@ -4,6 +4,7 @@
 #include "../Student/student.h"
 #include <vector>
 #include <memory> 
+#include <iostream>
 
 class Camera {
 private:
@@ -24,7 +25,9 @@ public:
     Camera& operator=(const Camera& other);
 
     // Destructor
-    ~Camera();
+    virtual ~Camera() ;
+
+    virtual void afiseaza() const;
 
     // Methods
     bool adaugaStudent(std::unique_ptr<Student> student);

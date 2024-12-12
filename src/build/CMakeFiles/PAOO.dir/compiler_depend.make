@@ -820,6 +820,8 @@ CMakeFiles/PAOO.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  ../Camera/CameraLux.h \
+  ../Camera/camera.h \
   ../Camin/camin.h \
   ../Camera/camera.h
 
@@ -863,6 +865,8 @@ CMakeFiles/PAOO.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
+
+../Camera/CameraLux.h:
 
 /usr/include/c++/11/exception:
 

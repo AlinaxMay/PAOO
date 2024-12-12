@@ -1,0 +1,3 @@
+/home/alina/Desktop/PAOO/src/CMakeFiles/PAOO.dir
+/home/alina/Desktop/PAOO/src/CMakeFiles/edit_cache.dir
+/home/alina/Desktop/PAOO/src/CMakeFiles/rebuild_cache.dir
