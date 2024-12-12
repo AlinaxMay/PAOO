@@ -8,7 +8,7 @@ class Camin {
     //incapsulare
 private:
     std::string name;
-    std::vector<Camera> camere;
+    std::vector<std::shared_ptr<Camera>> camere;  //camere as shared pointers
 
 public:
     // Constructor
@@ -18,11 +18,10 @@ public:
     ~Camin();
 
     // Methods
-    void adaugaCamera(Camera&& camera);
-    void adaugaCamera(std::unique_ptr<Camera> camera);
+    void adaugaCamera(std::shared_ptr<Camera> camera);
 
 
-    Camera* getCamera(int roomNumber);
+    std::shared_ptr<Camera> getCamera(int roomNumber);
 };
 
 #endif // CAMIN_H

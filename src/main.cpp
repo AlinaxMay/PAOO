@@ -10,38 +10,30 @@
 int main() {
     Camin camin("Camin Studentesc");
 
-    Camera camera1(1, 2);
-    Camera camera2(2, 3);
-    Camera cameraLux = CameraDeLux(201, 3, true, "Modern");
+    std::shared_ptr<Camera> camera1 = std::make_shared<Camera>(1, 2);
+    std::shared_ptr<Camera> camera2 = std::make_shared<Camera>(2, 2);
+    std::shared_ptr<Camera> cameraLux = std::make_shared<CameraDeLux>(201, 3, true, "Modern");
+    //std::shared_ptr<Camera> camera2 = std::make_shared<Camera>(1, 2); //shared pointers
+    //copy constr demonstrat
+
  
+    //move constr
     camin.adaugaCamera(std::move(camera1));
     camin.adaugaCamera(std::move(camera2));
     camin.adaugaCamera(std::move(cameraLux));
 
 
-    auto student1 = std::make_unique<Student>("Alina", 1000, 2);
+    auto student1 = std::make_unique<Student>("Alina", 1000, 2); //smart unic pointer 
     auto student2 = std::make_unique<Student>("Maria", 1001, 1);
 
-    // if (camera1.adaugaStudent(std::move(student1))) {
-    //     std::cout << "Studentul a fost adaugat in camera.\n";
-    // } else {
-    //     std::cout << "Camera este plina.\n";
+    // std::shared_ptr<Camera> cam = camin.getCamera(1); 
+    // if (cam && cam->adaugaStudent(std::move(student1))) {
+    //     std::cout << "Alina a fost adaugat in camera 1.\n";
     // }
 
-    // if (camera1.adaugaStudent(std::move(student2))) {
-    //     std::cout << "Studentul a fost adaugat in camera.\n";
-    // } else {
-    //     std::cout << "Camera este plina.\n";
+    // if (cam && cam->adaugaStudent(std::move(student2))) {
+    //     std::cout << "Maria a fost adaugat in camera 1.\n";
     // }
-
-    Camera* cam = camin.getCamera(1); 
-    if (cam && cam->adaugaStudent(std::move(student1))) {
-        std::cout << "Alina a fost adaugat in camera 1.\n";
-    }
-
-    if (cam && cam->adaugaStudent(std::move(student2))) {
-        std::cout << "Maria a fost adaugat in camera 1.\n";
-    }
 
     return 0;
 }

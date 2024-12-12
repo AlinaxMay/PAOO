@@ -6,6 +6,7 @@
 #include <memory> 
 #include <iostream>
 
+
 class Camera {
 private:
     int roomNumber;

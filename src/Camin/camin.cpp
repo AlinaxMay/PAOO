@@ -9,21 +9,18 @@ Camin::Camin(const std::string& name) : name(name) {
 Camin::~Camin() {}
 
 // Methods
-void Camin::adaugaCamera(Camera&& camera) {
-    camere.push_back(std::move(camera)); 
+
+void Camin::adaugaCamera(std::shared_ptr<Camera> camera) { //smart shared pointer 
+    camere.push_back(std::move(camera)); // Add shared_ptr to the vector
 }
 
-void adaugaCamera(std::unique_ptr<Camera> camera) {
-    camera->afiseaza();
-}
+// std::shared_ptr<Camera> getCamera(int roomNumber) {
+//         for (auto& camera : camere) {
+//             if (camera->getRoomNumber() == roomNumber) {
+//                 return camera;  // Return shared_ptr to the camera
+//             }
+//         }
+//         return nullptr;  // Return nullptr if camera not found
+//     }
 
 
-
-Camera* Camin::getCamera(int roomNumber) {
-    for (Camera& camera : camere) {
-        if (camera.getRoomNumber() == roomNumber) {
-            return &camera;
-        }
-    }
-    return nullptr;
-}
